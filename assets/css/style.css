@@ -121,15 +121,6 @@ a {
   top: 0;
 }
 
-.tag:hover {
-  background-color: crimson;
-  color: white;
-}
-
-.tag:hover::after {
-  border-left-color: crimson;
-}
-
 .blog-item:nth-child(2n) .tag {
   background: #fff;
 }
@@ -143,3 +134,13 @@ a {
   border-left-color: #fff;
 }
 
+.blog-item .tag:hover,
+.tag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.blog-item .tag:hover::after,
+.tag:hover::after {
+  border-left-color: crimson;
+}
